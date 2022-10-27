@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding-left: 55px;
+    padding-right: 55px;
+    padding: 200px;
+}
+.main{
+    background-color: rgb(248, 244, 244);
+    padding: 8%;
+    border-top: black 6px solid;
+    border-bottom: black 6px solid;
+    height: 1200px;
+}
+.address{
+    text-align: right;
+    padding-bottom: 10px;
+    border-bottom: black solid 2px;
+    padding-top: 10px;
+}
+.pro{
+    height: 80px;
+    border-bottom: black solid 2px;
+    padding-top: 10px;
+}
+.skills{
+    height: 150px;
+    border-bottom: black solid 2px;
+    padding-top: 10px;
+}
+.tec{
+    height: 150px;
+    border-bottom: black solid 2px;
+    padding-top: 10px;
+}
+.exp{
+    height: 100px;
+    border-bottom: black solid 2px;   
+    padding-top: 10px;
+}
+.app{
+    width: 80%;
+    float: right;
+    height: 100px;
+    border-bottom: black solid 2px;
+    padding-top: 10px;
+}
+.micro{
+    width: 80%;
+    float: right;
+    height: 80px;
+    border-bottom: black solid 2px;
+    padding-top: 10px;
+}
+.inter{
+    width: 80%;
+    float: right;
+    height: 80px;
+    border-bottom: black solid 2px;
+    padding-top: 10px;
+}
+.edu{
+    height: 100px;
+    padding-top: 50px;
+    padding-top: 10px;
+
+}
+.date{
+    width: 40px;
+    float: right;
+    padding-bottom: 10px;
+}
+.bt{
+    background-color: rgb(161, 155, 155);
+    width: 20%;
+    float: right;
+    text-align: center;
+}
+.bot{
+    padding-top: 350px;
+    text-align: center;
+    border-bottom: black solid 2px;
+}
+.lf{
+    float: left;
+    width: 20%;
+}
+.rt{
+    width: 80%;
+    display: inline-block;
+}

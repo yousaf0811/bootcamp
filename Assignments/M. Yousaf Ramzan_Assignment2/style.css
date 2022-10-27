@@ -1,0 +1,134 @@
+.heading1{
+    border-bottom: rgb(95, 91, 91) solid 2px;
+}
+.row1{
+    padding-top: 10px;
+    height: 350px;
+}
+.row1 .box1{
+width: 48%;
+float: right;
+height: 300px;
+}
+.row1 .box2{
+    width: 48%;
+    float: left;
+    height: 300px;
+}
+.box1, .box2{
+    border: solid rgb(206, 194, 194) 2px;
+}
+.row1 .box1 .textbox{
+    float: right;
+    width: 55%;
+    height: 250px;
+}
+.row1 .box2 .textbox{
+    float: right;
+    width: 55%;
+    height: 250px;
+}
+.row1 img{
+    height: 296px;
+    width: 40%;
+    float: left;
+}
+.row1 .box1 .textbox .smile{
+    float: left;
+    border-radius: 100%;
+    display: inline;
+    height: 20px;
+}
+.b1{
+    margin-top: 100px;
+}
+  .b11, .b22, .b33{
+      float: left;
+      width: 33.3334%;
+      height: 700px;
+      display: flex;
+      /* margin: 40px; */
+      border: solid rgb(206, 194, 194) 2px;
+  }
+.b1 .b11 .imgbox img{ 
+    height: 350px;
+    width: 402px;
+}
+.b1 .b22 .imgbox img{ 
+    height: 350px;
+    width: 402px;
+}
+.b1 .b33 .imgbox img{ 
+    height: 350px;
+    width: 402px;
+}
+.b2 .b11 .imgbox img{ 
+    height: 350px;
+    width: 405px;
+}
+.b2 .b22 .imgbox img{ 
+    height: 350px;
+    width: 405px;
+}
+.b2 .b33 .imgbox img{ 
+    height: 350px;
+    width: 405px;
+}
+.row1 .textbox img{
+    width: 40px;
+    height: 40px;
+}
+.fcontainer{
+    /* border: 2px solid black; */
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content:left;
+    margin-top: 110px;
+    padding-right: 20px;
+}
+.fitem{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    justify-content: left;
+
+}
+.b1 .textbox .smile img{
+    width: 40px;
+    height: 40px;
+}
+.b1 .textbox{
+    text-align: center;
+}
+.mar{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
