@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 100px;
+    /* background-color: blue; */
+    background: blue;
+}
+.page{
+    background-color: cornsilk;
+    padding: 20px;
+    border-radius: 15px;
+}
+    </style>
+    <div class="page">
+
+    <h1 id="main">Techlift Bootcamp (MERN STACK)</h1>
+    <select class="form-select" aria-label="Default select example" id="opt1" onchange="colour();">
+        <option selected id="clo1">Select the color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+        <option value="pink">Pink</option>
+        <option value="purple">purple</option>
+        <option value="brown">brown</option>
+        <option value="black">black</option>
+      </select>
+      <select class="form-select main1" aria-label="Default select example" id="opt2" onchange="align();">
+        <option selected>Line Alignment</option>
+        <option value="center">Center</option>
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+      </select>
+    </div>
+    <script>
+        function colour(){
+            var colour = document.getElementById("opt1").value;
+            document.getElementById("main").style.color = colour;
+        };
+        function align() {
+            var alignment = document.getElementById("opt2").value;
+            document.getElementById("main").style.textAlign = alignment;
+        };
+        // // var num22 = document.querySelector('#main');
+        // // console.log(num22);
+        // function check(){
+        // var m = document.getElementById("opt2").value;
+        // // console.log(m);
+        // var e = document.getElementById("opt1").value;
+        // // console.log(e);
+        // if(e == 'red' && m == 'Center'){
+        //     document.getElementById('main').style.color ="red";            
+        //     document.getElementById('main').style.textAlign = "center";
+        // }
+        // else if (e == 'Blue' && m == 'Center'){
+        //     document.getElementById('main').style.color ="blue";            
+        //     document.getElementById('main').style.textAlign = "center";
+        // }
+        // else if (e == 'yellow' && m == 'Center'){
+        //     document.getElementById('main').style.color ="yellow";            
+        //     document.getElementById('main').style.textAlign = "center";
+        // }
+        // else if (e == 'green' && m == 'Center'){
+        //     document.getElementById('main').style.color ="green";            
+        //     document.getElementById('main').style.textAlign = "center";
+        // }
+        // else if (e == 'Pink' && m == 'Center'){
+        //     document.getElementById('main').style.color ="pink";            
+        //     document.getElementById('main').style.textAlign = "center";
+        // }
+        // else if (e == 'purple' && m == 'Center'){
+        //     document.getElementById('main').style.color ="purple";            
+        //     document.getElementById('main').style.textAlign = "center";
+        // }
+        // else if (e == 'brown' && m == 'Center'){
+        //     document.getElementById('main').style.color ="brown";            
+        //     document.getElementById('main').style.textAlign = "center";
+        // }
+        // else if (e == 'black' && m == 'Center'){
+        //     document.getElementById('main').style.color ="black";            
+        //     document.getElementById('main').style.textAlign = "center";
+        // }
+        // else if(e == 'red' && m == 'left'){
+        //     document.getElementById('main').style.color ="red";            
+        //     document.getElementById('main').style.textAlign = "left";
+        // }
+        // else if (e == 'Blue' && m == 'left'){
+        //     document.getElementById('main').style.color ="blue";            
+        //     document.getElementById('main').style.textAlign = "left";
+        // }
+        // else if (e == 'yellow' && m == 'left'){
+        //     document.getElementById('main').style.color ="yellow";            
+        //     document.getElementById('main').style.textAlign = "left";
+        // }
+        // else if (e == 'green' && m == 'left'){
+        //     document.getElementById('main').style.color ="green";            
+        //     document.getElementById('main').style.textAlign = "left";
+        // }
+        // else if (e == 'Pink' && m == 'left'){
+        //     document.getElementById('main').style.color ="pink";            
+        //     document.getElementById('main').style.textAlign = "left";
+        // }
+        // else if (e == 'purple' && m == 'left'){
+        //     document.getElementById('main').style.color ="purple";            
+        //     document.getElementById('main').style.textAlign = "left";
+        // }
+        // else if (e == 'brown' && m == 'left'){
+        //     document.getElementById('main').style.color ="brown";            
+        //     document.getElementById('main').style.textAlign = "left";
+        // }
+        // else if (e == 'black' && m == 'left'){
+        //     document.getElementById('main').style.color ="black";            
+        //     document.getElementById('main').style.textAlign = "left";
+        // }
+        // else if(e == 'red' && m == 'right'){
+        //     document.getElementById('main').style.color ="red";            
+        //     document.getElementById('main').style.textAlign = "right";
+        // }
+        // else if (e == 'Blue' && m == 'right'){
+        //     document.getElementById('main').style.color ="blue";            
+        //     document.getElementById('main').style.textAlign = "right";
+        // }
+        // else if (e == 'yellow' && m == 'right'){
+        //     document.getElementById('main').style.color ="yellow";            
+        //     document.getElementById('main').style.textAlign = "right";
+        // }
+        // else if (e == 'green' && m == 'right'){
+        //     document.getElementById('main').style.color ="green";            
+        //     document.getElementById('main').style.textAlign = "right";
+        // }
+        // else if (e == 'Pink' && m == 'right'){
+        //     document.getElementById('main').style.color ="pink";            
+        //     document.getElementById('main').style.textAlign = "right";
+        // }
+        // else if (e == 'purple' && m == 'right'){
+        //     document.getElementById('main').style.color ="purple";            
+        //     document.getElementById('main').style.textAlign = "right";
+        // }
+        // else if (e == 'brown' && m == 'right'){
+        //     document.getElementById('main').style.color ="brown";            
+        //     document.getElementById('main').style.textAlign = "right";
+        // }
+        // else if (e == 'black' && m == 'right'){
+        //     document.getElementById('main').style.color ="black";            
+        //     document.getElementById('main').style.textAlign = "right";
+        // }
+        // }
+    </script>
+</body>
+</html>

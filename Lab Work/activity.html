@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 100px;
+    background: blue;
+}
+.page{
+    background-color: cornsilk;
+    padding: 20px;
+    border-radius: 15px;
+}
+    </style>
+    <form class="row g-3 page">
+
+        <div class="col-md-12">
+          <label for="validationServer03" class="form-label">Name</label>
+          <input  type="text" class="form-control" id="name" aria-describedby="validationServer03Feedback" required placeholder="Yousaf Ramzan">
+          <div id="validationServer03Feedback" >
+            Please provide a valid Name.
+          </div>
+        </div>
+        <div class="col-md-12">
+            <label for="validationServer03" class="form-label">Phone Number</label>
+            <input type="text" class="form-control num2 " id="validationServer03" aria-describedby="validationServer03Feedback" required placeholder="03xx-xxxxxxx">
+            <div id="validationServer03Feedback" >
+              Please provide a valid Phone Number.
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationServer03" class="form-label">CNIC</label>
+            <input type="text" class="form-control num3 " id="validationServer03" aria-describedby="validationServer03Feedback" required placeholder="xxxxx-xxxxxxx-x">
+            <div id="validationServer03Feedback" >
+              Please provide a valid CNIC Number.
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationServer03" class="form-label">Age</label>
+            <input type="number" class="form-control num4" id="validationServer03" aria-describedby="validationServer03Feedback" required placeholder="xx">
+            <div id="validationServer03Feedback">
+              Please provide Age.
+            </div>
+          </div>
+        <div class="col-12">
+          <button onclick="validity1();" class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+      <script>
+          function validity1(){
+            var num11 = document.getElementById('name').value;
+            console.log(num11);
+          }
+      </script>
+</body>
+</html>

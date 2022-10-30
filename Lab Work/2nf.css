@@ -1,0 +1,12 @@
+body{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 100px;
+    /* background-color: blue; */
+    background: blue;
+}
+.page{
+    background-color: cornsilk;
+    padding: 20px;
+    border-radius: 10px;
+}
