@@ -14,7 +14,9 @@
         <!-- For demo purpose -->
         <div class="row mb-4">
             <div class="col-lg-8 mx-auto text-center">
-                <h1 class="display-6">Payment Methods</h1>
+                <h1>Activity-3</h1>
+                <h5>Week-4</h5>
+                <!-- <h3 class="display-6">Payment Methods</h3> -->
             </div>
         </div> <!-- End -->
         <div class="row">
@@ -22,11 +24,13 @@
                 <div class="card ">
                     <div class="card-header">
                         <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                            <h3 style="color: red;">Payment Method</h3>
                             <!-- Credit card form tabs -->
                             <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
-
-                                <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
-                                <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> VISA </a> </li>
+                                <li><img height="70px" src="./paypal.png" alt=""></li>
+                                <li><img height="80px" width="250px" src="./visa.jpeg" alt=""></li>
+                                <!-- <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li> -->
+                                <!-- <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> VISA </a> </li> -->
                             </ul>
                         </div> <!-- End -->
                         <!-- Credit card form content -->
@@ -36,7 +40,7 @@
                                 <form role="form" onsubmit="event.preventDefault()">
                                     <div class="form-group"> <label for="username">
                                             <h6>Name or Card</h6>
-                                        </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control num1 " id='ttt' onclick="check()"> </div>
+                                        </label> <input type="text" name="username" placeholder="Yousaf Ramzan" required class="form-control num1 " id='ttt'> </div>
                                     <div class="form-group"> <label for="cardNumber">
                                             <h6>Card number</h6>
                                         </label>
@@ -55,7 +59,7 @@
                                         <div class="col-sm-4">
                                             <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
                                                     <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
-                                                </label> <input type="text" required class="form-control"> </div>
+                                                </label> <input type="text" required class="form-control" placeholder="xxx"> </div>
                                         </div>
                                     </div>
                                     <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
@@ -87,7 +91,7 @@
                                     <option>Bank 10</option>
                                 </select> </div>
                             <div class="form-group">
-                                <p> <button type="button" class="btn btn-primary " onclick="check()" ><i class="fas fa-mobile-alt mr-2"></i> Proceed Payment</button> </p>
+                                <p> <button type="button" class="btn btn-primary " onclick="check();" ><i class="fas fa-mobile-alt mr-2"></i> Proceed Payment</button> </p>
                             </div>
                             <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
                         </div> <!-- End -->
@@ -98,11 +102,11 @@
         </div>
         <script>
                 function check(){
-    const item = document.getElementById('ttt').value;
-console.log(item);
-}
-const item = document.getElementById('ttt');
-console.log(item);
+                const item = document.querySelector('#ttt').value;
+                    console.log(item);
+                    }
+                const item = document.getElementsByClassName('num1').value;
+             console.log(item);
         </script>
 </body>
 </html>

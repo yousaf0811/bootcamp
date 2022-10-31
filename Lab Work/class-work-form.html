@@ -33,21 +33,21 @@
         </div>
         <div class="col-md-12">
             <label for="validationServer03" class="form-label">Phone Number</label>
-            <input type="text" class="form-control num2 " id="validationServer03" aria-describedby="validationServer03Feedback" required placeholder="03xx-xxxxxxx">
+            <input type="text" class="form-control " id="name1" aria-describedby="validationServer03Feedback" required placeholder="03xx-xxxxxxx">
             <div id="validationServer03Feedback" >
               Please provide a valid Phone Number.
             </div>
           </div>
           <div class="col-md-12">
             <label for="validationServer03" class="form-label">CNIC</label>
-            <input type="text" class="form-control num3 " id="validationServer03" aria-describedby="validationServer03Feedback" required placeholder="xxxxx-xxxxxxx-x">
+            <input type="text" class="form-control " id="name2" aria-describedby="validationServer03Feedback" required placeholder="xxxxx-xxxxxxx-x">
             <div id="validationServer03Feedback" >
               Please provide a valid CNIC Number.
             </div>
           </div>
           <div class="col-md-12">
             <label for="validationServer03" class="form-label">Age</label>
-            <input type="number" class="form-control num4" id="validationServer03" aria-describedby="validationServer03Feedback" required placeholder="xx">
+            <input type="number" class="form-control num4" id="name3" aria-describedby="validationServer03Feedback" required placeholder="xx">
             <div id="validationServer03Feedback">
               Please provide Age.
             </div>
@@ -60,6 +60,12 @@
           function validity1(){
             var num11 = document.getElementById('name').value;
             console.log(num11);
+            var num12 = document.getElementById('name1').value;
+            console.log(num12);
+            var num13 = document.getElementById('name2').value;
+            console.log(num13);
+            var num14 = document.getElementById('name3').value;
+            console.log(num14);
           }
       </script>
 </body>
