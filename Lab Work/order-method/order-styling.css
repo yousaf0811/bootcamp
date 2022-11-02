@@ -1,0 +1,27 @@
+.nav2{
+    background-color: rgb(179, 39, 179);
+    text-align: center;
+}
+.page{
+    padding-top: 100px;
+    background-color: lavender;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.items{
+    border-radius: 10px;
+    background-color: whitesmoke;
+    height: 820px;
+    width: 450px;
+}
+.page .shopping .text{
+    border-radius: 10px;
+    text-align: center;
+}
+.num8{
+    padding-bottom: 15px;
+}
