@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<title>API</title>
+<style>
+    .card{
+        height: 647px;
+        width: 400px;
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 500px;
+        border: black solid 4px;
+        background-color: whitesmoke;
+    }
+    .ft{
+        width: 398;
+        height: 250px;
+        margin-top: 4px;
+        background-color: rgb(229, 231, 220);
+        border-bottom: black 2px solid;
+    }
+    .ft img{
+        border: black 2px solid;
+        margin-top: 210px;
+        margin-left: 160px;
+        border-radius: 40px;
+    }
+    .name{
+        width: 398;
+        height: 82px;
+    }
+    .profession{
+        width: 398;
+        height: 82px;
+    }
+    .bio{
+        width: 398;
+        height: 82px;   
+    }
+    .button{
+        width: 398;
+        height: 82px;
+        margin-left: 130px;
+        margin-top: 25px;
+    }
+    #name{
+        text-align: center;
+        margin-top: 40px;
+    }
+    #profession{
+        text-align: center;
+    }
+    #bio{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div id="cards"  class="card shadow">
+
+    <div class="ft">
+        <div  class="img">
+            <img id="image" height="80px" width="80px" src="" alt="">
+        </div>
+    </div>
+    <div class="sd">
+        <div class="name">
+            <h5 id="name"></h5>
+        </div>
+        <div class="profession">
+            <h6 id="profession"></h6>
+        </div>
+        <div class="bio">
+            <p id="bio"></p>
+        </div>
+        <div class="button">
+            <a id="link1" href="" target="_blank"> 
+                <button type="button" class="btn btn-primary btn-lg">Open Profile</button>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+fetch('https://api.github.com/users')
+  .then(response => response.json())
+  .then(json => {
+console.log(json) 
+                for(var i = 0; i<json.length; i++){
+                        var ele1 = json[i];
+                        document.getElementById("cards").innerHTML += `
+    <div class="ft">
+        <div  class="img">
+            <img id="image" height="80px" width="80px" src="${ele1.avatar_url}" alt="">
+        </div>
+    </div>
+    <div class="sd">
+        <div class="name">
+            <h5 id="name">${ele1.login}</h5>
+        </div>
+        <div class="profession">
+            <h6 id="profession">${ele1.node_id}</h6>
+        </div>
+        <div class="bio">
+            <p id="bio">${ele1.bio}</p>
+        </div>
+        <div class="button">
+            <a id="link1" href="${ele1.html_url}" target="_blank"> 
+                <button type="button" class="btn btn-primary btn-lg">Open Profile</button>
+            </a>
+        </div>
+    </div>
+    `}
+  })
+</script>
+</body>
+</html>
