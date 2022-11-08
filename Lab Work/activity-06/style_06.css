@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 120px;
+}
+table {
+font-family: arial, sans-serif;
+border-collapse: inherit;
+width: 100%;
+}
+.he{
+background-color: #009578;
+}
+td, th {
+border: 1px solid #dddddd;
+text-align: center;
+padding: 8px;
+}
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+.data1{
+    display: flex;
+    flex-direction: column;
+}
